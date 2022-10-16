@@ -12,7 +12,7 @@ store.shadowText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 <template>
     <div class="text">
-        <RenderInfo :info="store.shadowText"/>
+        <render-info :info="store.shadowText"/>
     </div>
 </template>
 

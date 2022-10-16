@@ -13,7 +13,6 @@ onMounted(() => {
 
 <template>
   <main>
-    <h1>Im a HomeView title</h1>
     <Info></Info>
   </main>
 </template>
