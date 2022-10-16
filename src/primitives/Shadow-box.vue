@@ -1,5 +1,6 @@
 <script setup>
 import {useStore} from '../composables/useStore';
+import RenderInfo from '../components/RenderInfo.vue'
 
 const store = useStore();
 
@@ -11,7 +12,7 @@ store.shadowText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 <template>
     <div class="text">
-        {{ store.shadowText }}
+        <RenderInfo :info="store.shadowText"/>
     </div>
 </template>
 
