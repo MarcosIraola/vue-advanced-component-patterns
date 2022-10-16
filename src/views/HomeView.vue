@@ -6,8 +6,8 @@ const store = useStore()
 
 
 onMounted(() => {
-  store.shadowText = h('h1', `h1 a traves de h-function`);
-})
+  store.shadowText = h('h1', `h1 from h-function`);
+});
 
 </script>
 
