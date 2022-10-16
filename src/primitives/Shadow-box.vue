@@ -1,13 +1,17 @@
 <script setup>
+import {useStore} from '../composables/useStore';
+
+const store = useStore();
+
+store.shadowText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Numquam quibusdam officia mollitia reiciendis provident quos a 
+            tempora eos aliquid, ullam at natus nostrum sit, harum qui. 
+            Quisquam harum optio voluptatem?`
 </script>
 
 <template>
     <div class="text">
-        <slot>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Numquam quibusdam officia mollitia reiciendis provident quos a 
-        tempora eos aliquid, ullam at natus nostrum sit, harum qui. 
-        Quisquam harum optio voluptatem?
-    </slot>
+        {{ store.shadowText }}
     </div>
 </template>
 
